@@ -1,6 +1,6 @@
 /* 
 Output in browser console
-'log' is a method of the object 'console' (The console object provides access 
+log is a method of the object console (The console object provides access 
 to the browser's debugging console)
 List of console methods: https://developer.mozilla.org/en-US/docs/Web/API/Console
 */
@@ -39,3 +39,24 @@ const y = undefined; // undefined
 let z; // undefined
 
 console.log(typeof 42);
+
+/*
+Strings
+There are a lot methods and properties related to strings, I will show the most
+used ones, the full list can be found on the follow link
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+*/
+
+const myString = 'Example String';
+
+console.log(myString.length); // a property to check the length
+console.log(myString + '!'); // concatenating the string
+console.log(myString.indexOf('String')); // checking the location of a substring
+console.log(myString.substring(0, 7)); // extracting a substring
+
+/*
+Template Strings
+Instead of quotes, use backtick to write the string, expressions must be inside ${}
+*/
+
+console.log(`My name is ${username} and I am ${age}`);
