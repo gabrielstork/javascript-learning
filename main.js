@@ -49,7 +49,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 const myString = 'Example String';
 
-console.log(myString.length); // a property to check the length
+console.log(myString.length); // a property to check the length of the string
 console.log(myString + '!'); // concatenating the string
 console.log(myString.indexOf('String')); // checking the location of a substring
 console.log(myString.substring(0, 7)); // extracting a substring
@@ -60,3 +60,19 @@ Instead of quotes, use backtick to write the string, expressions must be inside 
 */
 
 console.log(`My name is ${username} and I am ${age}`);
+
+/*
+Arrays
+Arrays are list-like objects.
+Even if the array is set as a const variable, you can manipulate the values in it but never reassign.
+*/
+
+const fruits = ['apples', 'oranges', 'bananas'];
+
+fruits.unshift('pears') // add an item to the start
+fruits.push('grapes'); // add an item to the end
+fruits.pop(); // remove an item from the end
+
+console.log(fruits);
+console.log(fruits.length); // a property to check the length of the array
+console.log(fruits[1]); // accessing the second element of the array
