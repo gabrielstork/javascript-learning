@@ -76,3 +76,69 @@ fruits.pop(); // remove an item from the end
 console.log(fruits);
 console.log(fruits.length); // a property to check the length of the array
 console.log(fruits[1]); // accessing the second element of the array
+
+/*
+Object literals
+It is not the same as the JSON notation.
+*/
+
+const person = {
+    name: 'Gabriel',
+    country: 'Brazil',
+    age: 23
+}
+
+console.log(person); // accessing all values
+console.log(person.name); // accessing a specific value
+
+person.email = 'gabriel@email.com'; // adding a new propertie
+console.log(person);
+
+const todos = [
+    {
+        id: 1,
+        task: 'Clean my room',
+        isDone: true
+    },
+    {
+        id: 2,
+        task: 'Start a new book',
+        isDone: false
+    }
+];
+
+console.log(todos[0].task); // getting the first task of the array
+
+/*
+JSON (JavaScript Object Notation)
+*/
+
+const todosJSON = JSON.stringify(todos);
+console.log(todosJSON);
+
+/*
+FOR loop
+*/
+
+for(let i = 0; i <= 5; i++) {
+    console.log(`Number: ${i}`);
+}
+
+/*
+WHILE loop
+*/
+
+let i = 0;
+
+while(i <= 5) {
+    console.log(`Number: ${i}`);
+    i++;
+}
+
+/*
+Looping over an array
+*/
+
+for(let todo of todos) {
+    console.log(todo.task);
+}
